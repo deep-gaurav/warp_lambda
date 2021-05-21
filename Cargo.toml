@@ -15,11 +15,11 @@ categories = ["web-programming", "web-programming::http-server"]
 maintenance = { status = "experimental" }
 
 [dependencies]
-aws_lambda_events = "0.4"
+aws_lambda_events = {git = "https://github.com/LegNeato/aws-lambda-events.git"}
 # Reference issue https://github.com/awslabs/aws-lambda-rust-runtime/issues/274 
 # for the reason to move away from official awslabs/aws-lambda-rust-runtime
 # in favor of using netlify's fork lamedh-dev/aws-lambda-rust-runtime
-lamedh_http = "0.3"
+lamedh_http = {git = "https://github.com/deep-gaurav/aws-lambda-rust-runtime.git", branch = "main"}
 mime = "0.3"
 once_cell = "1.7"
 warp = "0.3"
